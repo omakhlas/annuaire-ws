@@ -1,0 +1,1 @@
+Create table annuaire as select * from CSVREAD('classpath:mock_data.csv');
