@@ -20,4 +20,5 @@ Spring boot 2
 
 QueryDSL : il génère une classe QContac dans target/generated-sources/java
 
-           Si la classe n'est pas importée automatiquement, vous devez ajouter le repertoire target/generated-sources/java dans le classpath
+Si la classe n'est pas importée automatiquement, vous devez ajouter le repertoire target/generated-sources/java dans le classpath
+           
