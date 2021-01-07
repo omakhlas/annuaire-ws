@@ -19,4 +19,5 @@ voir fichier mock_data.csv dans src/main/resources
 Spring boot 2
 
 QueryDSL : il génère une classe QContac dans target/generated-sources/java
-           Si la classe n'est pas importé automatiquement, vous devez ajouter je repertoire target/generated-sources/java dans le classpath
+
+           Si la classe n'est pas importée automatiquement, vous devez ajouter le repertoire target/generated-sources/java dans le classpath
