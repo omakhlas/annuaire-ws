@@ -9,6 +9,8 @@
 
 Créer un web service d'annuaire rest qui se connecte a une BDD et une interface web pour rechercher un contact
 
+API : http://localhost:8080/api/contacts?firstName=&lastName=&email=&company=&departement=
+
 données à exposer:
 
 voir fichier mock_data.csv dans src/main/resources
