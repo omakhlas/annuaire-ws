@@ -6,15 +6,13 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Optional;
 
 @Controller
+@CrossOrigin(origins = "*")
 @RequestMapping(value="/api")
 public class ContactResource {
 
@@ -40,7 +38,7 @@ public class ContactResource {
                                                     @RequestParam String email,
                                                     @RequestParam String company,
                                                     @RequestParam String departement) {
-        log.debug("REST request to get Contacts : {}");
+        log.info("REST request to get Contacts : {}");
         List<Contact> contacts = contactService.searchContact(firstName, lastName, email, company, departement);
         return ResponseEntity.ok()
                 .body(contacts);
